@@ -1,0 +1,7 @@
+.calendar_header{
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
