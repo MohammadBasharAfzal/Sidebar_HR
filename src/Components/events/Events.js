@@ -1,7 +1,34 @@
 //import { useState } from 'react';
 import './Events.css'
+import Holi from '../../images/Holi.svg';
+import Ramazan from '../../images/Ramzan_Eid.svg';
+import RamNavami from '../../images/RamNavami.svg';
+import Eid from '../../images/Ramzan_Eid.svg';
+
 
 function Events({date, time, content, subContent}){
+    const pictures = [
+        {
+          "name": "Holi",
+          "image": Holi,
+        },
+        {
+            "name": "Eid",
+            "image": Eid,
+        },
+        {
+            "name": "Ramazan",
+            "image": Ramazan,
+        },
+        {
+            "name": "RamNavami",
+            "image": RamNavami,
+        }
+    ];
+    const imgFound = pictures.find((obj) => obj.name === content);
+    if (imgFound) {
+        var pic = imgFound.image;
+    }
     var b = false
     if (subContent === "Holiday"){
         b = true
@@ -10,27 +37,39 @@ function Events({date, time, content, subContent}){
     return(
         <div id="container">
             <div className='container1'>
-                <div className='block-1-1'>
+                {b ? <div className='block-100'>
                     <div id="ellipse"></div>
                     <div id='date'>{date}</div>
-                </div>
-                {b ? <div className='block-1-2'>
-                    <div className='img-rec'>
-                        <div id="img">
-                            {Image}
-                        </div>
-                    </div>
-                </div> 
+                </div> : <div className='block-50'>
+                    <div id="ellipse"></div>
+                    <div id='date'>{date}</div>
+                </div> }
+                {b ? 
+                 <></>
                 : 
                 <div className='block-1-2'>
                     <div id="ellipse"></div>
                     <div id='time'>{time}</div>
-                </div>}
-                <div id="text1">{content}</div>
-                <div id="text2">{subContent}</div>                    
-            </div>
+                </div>
+                }
+                {b ?<div className='block100'>
+                <div className='block50'>
+                    <div id="text1">{content}</div>
+                    <div id="text2">{subContent}</div>                    
+                </div>
+                <div className='block50'>
+                    <img id="image" src={pic} alt={content} height={50} width={50}/>
+                </div></div>
+                :
+                <div className='block50'>
+                    <div id="text1">{content}</div>
+                    <div id="text2">{subContent}</div>                    
+                </div>
+                }
+            </div>            
         </div>
     );
 }
 
 export default Events;
+

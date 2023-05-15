@@ -10,8 +10,19 @@
     border-radius: 12px;
     margin-top: 2vh;
 }
-.block-1-1{
+.block-50{
     display: inline-flex;
+    width: 50%;
+}
+.block-100{
+    display: inline-flex;
+    width: 100%;
+}
+.block100{
+    width: 100%;
+    display: inline-flex;
+}
+.block50{
     width: 50%;
 }
 .block-1-2{
@@ -33,7 +44,7 @@
     height: 10px;
     left: 19px;
     top: 25px;
-    margin: 7px;
+    margin: 10px;
     /* Third main color */
     background: #6A95CC;
     border-radius: 50%;
@@ -50,6 +61,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
+    margin: 3px;
     line-height: 22px;
     /* identical to box height */
     display: flex;
@@ -62,6 +74,7 @@
     /* 10:00 - 11:00 
     position: absolute;*/
     width: 89px;
+    margin: 3px;
     height: 23px;
     left: 207px;
     top: 18px;
@@ -116,4 +129,9 @@
     max-height: 80px;
     width: auto;
     max-width: 70px;
+    border: 1px;
+    
+}
+#img{
+    
 }
