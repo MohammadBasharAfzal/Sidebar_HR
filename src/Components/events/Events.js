@@ -1,8 +1,8 @@
 //import { useState } from 'react';
 import './Events.css'
-import Holi from '../../images/Holi.svg';
-import Ramazan from '../../images/Ramzan_Eid.svg';
-import RamNavami from '../../images/RamNavami.svg';
+import Holi from '../../images/Holi_ext.png';
+import Ramazan from '../../images/Ramazan.jpg';
+import RamNavami from '../../images/RamNavami_ext.jpg';
 import Eid from '../../images/Ramzan_Eid.svg';
 
 

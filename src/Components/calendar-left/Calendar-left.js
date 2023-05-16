@@ -1,5 +1,5 @@
 import './Calendar-left.css'
-import Events from '../events/Events';
+import Events from '../events/Events.js';
 
 function Calendar_left(){
     return(
@@ -12,7 +12,7 @@ function Calendar_left(){
                 <Events date="05/03/2023" time="10:00-11:00" content="Meeting with a client" subContent="Tell how to boost website traffic"></Events>
                 <Events date="05/03/2023" time="" content="Holi" subContent="Holiday"></Events>
                 <Events date="05/03/2023" time="10:00-11:00" content="Meeting with a client" subContent="Tell how to boost website traffic"></Events>
-                <Events date="05/03/2023" time="" content="Ramadan" subContent="Holiday"></Events>
+                <Events date="05/03/2023" time="" content="Ramazan" subContent="Holiday"></Events>
                 <Events date="05/03/2023" time="" content="RamNavami" subContent="Holiday"></Events>
             </div>
         </div>
