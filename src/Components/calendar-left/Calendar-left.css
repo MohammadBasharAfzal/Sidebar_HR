@@ -3,8 +3,7 @@
     height: 100%;
     text-align: center;
     background-color: white;
-    padding-left: 21px;
-    padding-right: 40px;
+    margin: 20px;
 }
 #upcoming_events{
     /* Upcoming events */
